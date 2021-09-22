@@ -11,7 +11,7 @@ const Video = (props) => {
   const { item } = props;
 
   return (
-    <CardContainer>
+    <CardContainer data-testid="video">
       <ImageContainer>
         <VideoImage src={item?.snippet?.thumbnails?.medium?.url} />
         <Title>{item?.snippet?.title}</Title>
